@@ -9,18 +9,44 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: steelblue;
+main {
+    max-width: 840px;
+    text-align: center;
 }
-
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+aside {
+    width: 50%;
+    margin: 0px;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+h1 {
+    color: steelblue;
+}
+
+
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 25px;
+    border-top: 1px solid black;
+    text-align: center;
+    width: 50%;
 }

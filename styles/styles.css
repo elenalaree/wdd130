@@ -13,6 +13,7 @@ main {
     max-width: 840px;
     text-align: center;
 }
+
 main img {
     width: 150px;
     height: auto;
@@ -20,6 +21,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 aside {
     width: 50%;
     margin: 0px;
@@ -29,6 +31,7 @@ aside {
     color: black;
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
@@ -37,8 +40,6 @@ aside img {
 h1 {
     color: steelblue;
 }
-
-
 
 p {
     padding: 0;

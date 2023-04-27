@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
+
+:root {
+	--primary-color: #90a9b7;
+	--secondary-color: #d4aa7d ;
+	--accent1-color:#d2d8b3;
+	--accent2-color: #272727;
+
+    --heading-font: 'Lora', serif;
+    --paragraph-font: 'Lora', serif;
+
+    --nav-background-color: #272727;
+    --nav-link-color: #d2d8b3;
+    --nav-hover-link-color: #d4aa7d;
+    --nav-hover-background-color: #595959;
+}
+
+body {
+    max-width: 800px;
+    margin:auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-style: italic;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+h1 {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(39, 39, 39, .8);
+    padding: 10px 0
+}
+.hero-box {
+    position: absolute;
+    background-color: rgba(144, 169, 183, .5);
+    width: 80%;
+    left:9%;
+    padding: 10px;
+    top: 150px;
+}
+.hero-box p {
+    width: 80%;
+    color: white;
+}
+.hero-box img {
+    float: right;
+    position: relative;
+    width: 20%;
+}
+
+.pics img {
+    width: 40%;
+}

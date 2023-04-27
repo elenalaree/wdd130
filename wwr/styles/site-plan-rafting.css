@@ -2,8 +2,8 @@
 
 :root {
 	--primary-color: #90a9b7;
-	--secondary-color: #d2d8b3;
-	--accent1-color: #d4aa7d;
+	--secondary-color: #d4aa7d ;
+	--accent1-color:#d2d8b3;
 	--accent2-color: #272727;
 
     --heading-font: 'Lora', serif;
@@ -13,4 +13,45 @@
     --nav-link-color: #d2d8b3;
     --nav-hover-link-color: #d4aa7d;
     --nav-hover-background-color: #595959;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-style: italic;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }

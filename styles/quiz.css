@@ -11,9 +11,25 @@ form * {
     margin: 4px;
     padding: 2px;
 }
-input, select{
+input {
     height: 25px;
 }
+
+.button {
+    background-color: teal;
+    border-radius: 4px;
+    color: white;
+    border:5px outset teal;
+    height: 40px;
+}
+
+.button:active {
+    background-color: teal;
+    border-radius: 4px;
+    color: white;
+    border: 5px inset teal;
+}
+
 span{
     font-weight: 700;
 }

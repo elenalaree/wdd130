@@ -1,0 +1,33 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 4px solid gray;
+    padding: 2rem;
+}
+form * {
+    margin: 4px;
+    padding: 2px;
+}
+input, select{
+    height: 25px;
+}
+span{
+    font-weight: 700;
+}
+
+div{
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+pre{
+    background-color: black;
+    padding: 4px;
+    width: 60%;
+    
+}

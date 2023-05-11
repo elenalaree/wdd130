@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <link rel="stylesheet" href="./styles/quiz.css">
+	</head>
+	<body>
+		<form>
+			<label for="q1"><span>1.</span>What does CSS stand for?</label>
+			<input type="text" id="q1" name="q1" />
+			<label for="q2"><span>2.</span>What does the * do?</label>
+			<textarea type="text" id="q2" name="q2"></textarea>
+			<label for="q3"><span>3.</span>Which of the following will modify placement on the major axis direction?</label>
+			<select id="q3" name="q3">
+                <option value="choose">Choose one...</option>
+				<option value="justify-content">justify-content</option>
+				<option value="align-items">align-items</option>
+				<option value="flex-direction">flex-direction</option>
+			</select>
+			<label for="q4"><span>4.</span>Given the following code, what is the top padding?</label>
+                    <div><pre>       padding: 5px 10px 5px 0</pre></div>
+			<input type="number" id="q4" name="q4" />
+            <input type="submit" value="Submit quiz" class="button">
+		</form>
+	</body>
+</html>

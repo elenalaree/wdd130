@@ -14,12 +14,17 @@
     --nav-hover-link-color: #d4aa7d;
     --nav-hover-background-color: #595959;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     max-width: 800px;
-    margin:auto;
+    margin: auto;
     text-align: center;
-    
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     letter-spacing: 1.1px;
     text-transform: uppercase;
+    margin: 10px auto;
 }
 
 
@@ -80,7 +86,7 @@ nav a:hover {
     height: auto;
 
 }
-h1 {
+.hero h1 {
     position: absolute;
     top: 15px;
     text-align: center;
@@ -130,7 +136,7 @@ h1 {
 
 }
 
-figure{
+.pics figure{
     width: 160px;
     margin: 0px;
 }
@@ -139,19 +145,92 @@ footer{
     display: flex;
     height: 4rem;
     width: 100%;
-    
     align-items: center;
+    text-align: center;
 }
+
 footer p{
     width: 80%;
-    padding-left: 20%;
 }
 
 .socials{
     width: 20%;
+    
 }
 
 .socials img{
     max-height: 2rem;
     justify-self: right;
+}
+
+/* Map CSS */
+
+.map{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.address{
+    font-size: 1.25em;
+}
+#canvas-for-googlemap img {
+    max-width: none !important;
+    background: none !important;
+    font-size: inherit;
+    font-weight: inherit;}
+
+/* Workers */
+.workers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    padding: 1.5rem 0
+}
+
+.workers img{
+    width: 250px;
+}
+
+/* Form CSS */
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2em;
+}
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.name-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 60%
+}
+
+.name-box input{
+    height: 40px;
+    font-size: 1.2em;
+    padding: 3px;
+}
+.submit{
+    display: inline-block;
+    padding: 0 auto;
+
+}
+.button{
+    width:40%;
+    height: 40px;
+    font-size: 1em;
+    margin: 10px auto
 }

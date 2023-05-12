@@ -234,3 +234,7 @@ form{
     font-size: 1em;
     margin: 10px auto
 }
+.wireframe {
+    text-decoration: none;
+    color: steelblue;
+}

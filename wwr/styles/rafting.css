@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
 
 :root {
-	--primary-color: #90a9b7;
-	--secondary-color: #d4aa7d ;
-	--accent1-color:#d2d8b3;
-	--accent2-color: #272727;
+    --primary-color: #90a9b7;
+    --secondary-color: #d4aa7d;
+    --accent1-color: #d2d8b3;
+    --accent2-color: #272727;
 
     --heading-font: 'Lora', serif;
     --paragraph-font: 'Lora', serif;
@@ -14,7 +14,8 @@
     --nav-hover-link-color: #d4aa7d;
     --nav-hover-background-color: #595959;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +28,12 @@ body {
     height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
     font-style: italic;
@@ -49,12 +55,12 @@ header {
 
 nav {
     grid-column-start: 4;
-    display:flex;
+    display: flex;
     grid-row: 2/3;
 }
 
 header img {
-    grid-column-start:2;
+    grid-column-start: 2;
     grid-row: 2/3;
     align-self: auto;
     border-radius: 50px;
@@ -67,9 +73,10 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
     color: var(--nav-link-color);
-;
+    ;
 }
 
 nav a:hover {
@@ -80,12 +87,14 @@ nav a:hover {
 .hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     max-width: 100%;
     height: auto;
 
 }
+
 .hero h1 {
     position: absolute;
     top: 15px;
@@ -94,54 +103,59 @@ nav a:hover {
     background-color: rgba(39, 39, 39, .8);
     padding: 10px 0
 }
+
 .hero-box {
     position: absolute;
     background-color: rgba(144, 169, 183, .5);
     width: 80%;
-    left:9%;
+    left: 9%;
     padding: 10px;
     top: 150px;
 }
+
 .hero-box p {
     width: 80%;
     color: white;
 }
+
 .hero-box img {
     float: right;
     position: relative;
     width: 20%;
 }
 
-.history{
+.history {
     display: flex;
     text-align: justify;
 }
-.history p{
+
+.history p {
     padding: 0 1rem;
     margin: 0;
 }
+
 .history img {
-    width:30%
+    width: 30%
 }
 
-.pics{
+.pics {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pics img{
-    max-width:150px;
+.pics img {
+    max-width: 150px;
     padding-top: 5px;
 
 }
 
-.pics figure{
+.pics figure {
     width: 160px;
     margin: 0px;
 }
 
-footer{
+footer {
     display: flex;
     height: 4rem;
     width: 100%;
@@ -149,38 +163,41 @@ footer{
     text-align: center;
 }
 
-footer p{
+footer p {
     width: 80%;
 }
 
-.socials{
+.socials {
     width: 20%;
-    
+
 }
 
-.socials img{
+.socials img {
     max-height: 2rem;
     justify-self: right;
 }
 
 /* Map CSS */
 
-.map{
+.map {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-.address{
+
+.address {
     font-size: 1.25em;
 }
+
 #canvas-for-googlemap img {
     max-width: none !important;
     background: none !important;
     font-size: inherit;
-    font-weight: inherit;}
+    font-weight: inherit;
+}
 
 /* Workers */
-.workers{
+.workers {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -188,13 +205,13 @@ footer p{
     padding: 1.5rem 0
 }
 
-.workers img{
+.workers img {
     width: 250px;
 }
 
 /* Form CSS */
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -203,14 +220,15 @@ form{
     text-align: left;
     font-size: 1.2em;
 }
-.top-box{
+
+.top-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
 }
 
-.name-box{
+.name-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -218,27 +236,50 @@ form{
     width: 60%
 }
 
-.name-box input{
+.name-box input {
     height: 40px;
     font-size: 1.2em;
     padding: 3px;
 }
-.submit{
+
+.submit {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
     justify-content: end;
-    
+
 
 }
-.button{
-    width:40%;
+
+.button {
+    width: 40%;
     height: 40px;
     font-size: 1em;
     margin: 10px auto 10px 1px
 }
+
 .wireframe {
     text-decoration: none;
     color: steelblue;
+}
+
+.frame {
+    text-decoration: none;
+    overflow: hidden;
+    max-width: 100%;
+    width: 500px;
+    height: 200px;
+}
+
+.frame-div {
+    height: 100%;
+    width: 100%;
+    max-width: 100%
+}
+
+.frame-main {
+    height: 100%;
+    width: 100%;
+    border: 0
 }

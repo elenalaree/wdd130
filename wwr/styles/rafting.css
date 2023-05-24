@@ -65,11 +65,12 @@ header img {
     align-self: auto;
     border-radius: 50px;
 }
-
+a{
+    text-decoration: none;
+}
 nav a {
     display: block;
     color: var(--nav-link-color);
-    text-decoration: none;
     padding: 1rem;
 }
 
@@ -251,7 +252,7 @@ form {
     
 }
 
-.button {
+.button, button {
     background-color: var(--primary-color);
     width: 100%;
     height: 40px;
@@ -259,13 +260,18 @@ form {
     margin: 10px auto 10px 1px
 }
 
+.button:hover, button:hover {
+    height: 41px;
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color)
+}
+
 .wireframe {
-    text-decoration: none;
-    color: var(--primary-color);
+
+    color: var(--accent2-color);
 }
 
 .frame {
-    text-decoration: none;
     overflow: hidden;
     max-width: 100%;
     width: 500px;
@@ -282,4 +288,199 @@ form {
     height: 100%;
     width: 100%;
     border: 0
+}
+
+/* trips css */
+
+.cta {
+    display: flex;
+    margin: 2vh auto;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.assert{
+    color: var(--nav-background-color)
+}
+
+.book{
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+}
+
+.cards{
+    display: flex;
+    min-height: 35vh;
+    margin: 0 auto;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price {
+    height: 4vh;
+    width: 50px;
+    position: relative;
+    top: -2vh;
+    background-color: var(--nav-link-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pecos{
+    background-image: url("../images/pecosriver.jpeg");
+    background-size: cover;  
+}
+
+.brazos{
+    background-image: url("../images/brazos.jpg");
+    background-size: cover;
+}
+
+.devils{
+    background-image: url("../images/devils.jpg");
+    background-size: cover;
+}
+.card{
+    display:flex;
+    min-height: 40vh;
+    width: 250px;
+    flex-direction: column;
+    margin: 2vh auto;
+    padding: 20px;
+    padding-top: 0;
+    text-align: left;
+}
+
+.card a, .contact  {
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+    padding: 1vh;
+    
+}
+.book{
+    color: var(--nav-background-color);
+    background-color: var(--accent1-color);
+    padding: 1vh;
+    margin: 3px;
+}
+
+
+.trip-info p {
+    min-height: 10vh;
+    background-color: rgba(39, 39, 39, .5);
+    color: white;
+    padding: 1vh;
+    
+}
+.card h4, .banner form {
+    background-color: rgba(39, 39, 39, .8);
+    padding: 1vh;
+}
+
+.bottom{
+    position: relative;
+    top: 3vh;
+}
+
+.bottom:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.shadow{
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    font-size: 1.1em;
+    background-color: var(--nav-background-color);
+    color: lightgray;
+}
+th {
+    padding: 2px;
+    background-color: var(--accent1-color);
+    color: var(--nav-background-color)
+}
+th, td{
+    border: 1px solid var(--nav-background-color);
+
+}
+tbody{
+    background-color: var(--nav-background-color);
+}
+
+.index-btn {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 4px;
+    width: 100px;
+    
+
+}
+
+
+/* Home Page */
+
+.banner {
+    background-image: url("../images/home-banner-cut.jpg");
+    background-size: cover;
+    height: 35vh;
+    display: flex;
+
+}
+.banner div{
+    color: white;
+    margin-top:2vh;
+    width: 100%;
+}
+.purpose{
+    display: grid;
+    height: 35vh;
+    width: 100%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+.grid-card1 {
+    grid-area: 2 / 3 / 15 / 11;
+    background-image: url("../images/left-home.jpg");
+    background-size: cover;
+}
+
+.grid-card2 {
+    grid-area: 2 / 12 / 15 / 20;
+    background-image: url("../images/right-home.jpg");
+    background-size: cover;
+}
+.home-card {
+    background-color: rgba(39, 39, 39, .5);
+    padding: 1vh;
+    margin: 0 auto;
+    color: white
+}
+.rule-change{
+    width: 250px;
+    background-color: var(--nav-background-color);
+    position: relative;
+    top: 2.5vh
+}
+.review {
+    margin: 5vh auto;
+    height: 25vh;
+    display: flex;
+
+}
+.review img {
+    padding: 2vh;
+}
+.review div{
+    padding: 5vh;
+    font-size: 18px;
+}
+.push-down{
+    margin-bottom: 4vh;
 }

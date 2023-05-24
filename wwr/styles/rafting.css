@@ -229,6 +229,10 @@ form {
     margin: 10px 0;
 }
 
+fieldset{
+    border:none
+}
+
 .name-box {
     display: flex;
     flex-wrap: wrap;
